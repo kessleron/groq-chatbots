@@ -17,7 +17,7 @@ with st.sidebar:
     # Add model details section
     st.divider()
     st.markdown("**Model Details**")
-    st.caption("Running: `deepseek-r1-distill-llama-70b`")
+    st.caption("Running: `qwen-qwq-32b`")
     st.caption("Groq LPU Inference Engine")
     
     # Add New Chat button
@@ -78,7 +78,7 @@ if prompt := st.chat_input("What's on your mind?"):
         
     # Initialize the ChatOpenAI model with Groq
     chat = ChatOpenAI(
-        model="deepseek-r1-distill-llama-70b",
+        model="qwen-qwq-32b",
         openai_api_key=st.session_state.groq_api_key,
         openai_api_base="https://api.groq.com/openai/v1"
     )
