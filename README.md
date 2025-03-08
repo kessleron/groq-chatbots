@@ -1,1 +1,1 @@
-# groq-whisper
+# groq-chatbots
